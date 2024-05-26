@@ -48,11 +48,12 @@ body {
     display: block;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, color 0.3s;
 }
 
 .sidebar ul li a:hover {
     background-color: #495057;
+    color: #fff;
 }
 
 .content {
@@ -89,7 +90,12 @@ section {
     align-items: flex-start;
 }
 
-section p {
+section p, section img, section video, section article {
     margin-top: 20px;
     margin-left: 20px;
+    width: calc(100% - 40px);
+}
+
+section article h3 {
+    margin-top: 0;
 }
