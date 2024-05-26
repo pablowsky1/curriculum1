@@ -7,17 +7,30 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Video Currículum</h1>
-        <nav>
-            <a href="index.html">Volver al Menú</a>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Juan Pérez</h2>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="presentacion.html">Presentación</a></li>
+                <li><a href="cv-tradicional.html">CV Tradicional</a></li>
+                <li><a href="cv-infografico.html">CV Infográfico</a></li>
+                <li><a href="video-curriculum.html">Video Currículum</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <video controls>
-            <source src="video-curriculum.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de videos.
-        </video>
-    </main>
+        <main class="content">
+            <header>
+                <h1>Video Currículum</h1>
+            </header>
+            <section>
+                <video controls>
+                    <source src="video-curriculum.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
+
