@@ -90,9 +90,15 @@ section {
     align-items: flex-start;
 }
 
-section p, section img, section video, section article {
+section h3 {
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section p, section img, section video, section article {
+    margin-top: 10px;
     margin-left: 20px;
+    margin-bottom: 20px;
     width: calc(100% - 40px);
 }
 
