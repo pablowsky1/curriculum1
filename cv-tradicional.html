@@ -3,20 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Tradicional - Juan Pérez</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>CV Tradicional - [Tu Nombre]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .sidebar h2 {
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            border-bottom: 1px solid white;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            margin-left: 20%;
+            padding: 20px;
+        }
+        .contact-info p {
+            margin: 0 0 10px;
+        }
+        .section {
+            margin: 20px 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .job, .education {
+            margin: 20px 0;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .job-details, .education-details {
+            margin: 5px 0;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills ul li {
+            background-color: #ff9900;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
 <body>
     <nav class="sidebar">
-            <h2>Juan Pérez</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="presentacion.html">Presentación</a></li>
-                <li><a href="cv-tradicional.html">CV Tradicional</a></li>
-                <li><a href="cv-infografico.html">CV Infográfico</a></li>
-                <li><a href="video-curriculum.html">Video Currículum</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
+        <h2>Juan Pérez</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="presentacion.html">Presentación</a></li>
+            <li><a href="cv-tradicional.html">CV Tradicional</a></li>
+            <li><a href="cv-infografico.html">CV Infográfico</a></li>
+            <li><a href="video-curriculum.html">Video Currículum</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <h1>[Tu Nombre]</h1>
         <div class="contact-info">
@@ -92,4 +162,5 @@
     </div>
 </body>
 </html>
+
 
