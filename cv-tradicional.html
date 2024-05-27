@@ -3,37 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Tradicional - Juan Pérez</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Currículum Vitae - [Tu Nombre]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .job-details, .education-details {
+            margin-left: 20px;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background: #e4e4e4;
+            margin: 5px 0;
+            padding: 5px;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <nav class="sidebar">
-            <h2>Juan Pérez</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="presentacion.html">Presentación</a></li>
-                <li><a href="cv-tradicional.html">CV Tradicional</a></li>
-                <li><a href="cv-infografico.html">CV Infográfico</a></li>
-                <li><a href="video-curriculum.html">Video Currículum</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <main class="content">
-            <header>
-                <h1>CV Tradicional</h1>
-            </header>
-            <section>
-                <h3>Experiencia Laboral</h3>
-                <p><strong>Desarrollador Web en Empresa XYZ</strong> (2019 - Presente)</p>
-                <p>Descripción de tu experiencia laboral...</p>
-                <h3>Educación</h3>
-                <p><strong>Licenciatura en Ciencias de la Computación</strong> - Universidad ABC (2015 - 2019)</p>
-                <p>Descripción de tu educación...</p>
-                <h3>Descargar CV</h3>
-                <p>Puedes descargar mi CV en formato <a href="path/to/tu-cv.pdf" target="_blank">PDF</a> o <a href="path/to/tu-cv.docx" target="_blank">Word</a>.</p>
-            </section>
-        </main>
+        <h1>[Tu Nombre]</h1>
+        <div class="contact-info">
+            <p><strong>Dirección:</strong> [Tu Dirección]</p>
+            <p><strong>Teléfono:</strong> [Tu Teléfono]</p>
+            <p><strong>Email:</strong> [Tu Correo Electrónico]</p>
+        </div>
+
+        <div class="section">
+            <h2>Objetivo Profesional</h2>
+            <p>Desarrollador apasionado con experiencia en tecnologías de la nube y programación, interesado en contribuir a proyectos innovadores y desafiantes como Associate Solutions Architect Intern en Amazon Web Services.</p>
+        </div>
+
+        <div class="section">
+            <h2>Experiencia Profesional</h2>
+            <div class="job">
+                <p class="job-title">Desarrollador de Software Interno - Empresa XYZ</p>
+                <p class="job-details">Junio 2022 - Agosto 2022</p>
+                <ul class="job-details">
+                    <li>Desarrollé y mantuve aplicaciones internas utilizando AWS Lambda, S3 y DynamoDB.</li>
+                    <li>Colaboré con el equipo de DevOps para implementar soluciones CI/CD en AWS.</li>
+                    <li>Automaticé procesos de datos que resultaron en una reducción del 30% en el tiempo de procesamiento.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <p class="job-title">Asistente de Investigación - Universidad de [Nombre]</p>
+                <p class="job-details">Septiembre 2021 - Mayo 2022</p>
+                <ul class="job-details">
+                    <li>Desarrollé scripts en Python para el análisis de grandes conjuntos de datos.</li>
+                    <li>Implementé soluciones en la nube para almacenar y procesar datos de investigación.</li>
+                    <li>Participé en la publicación de un artículo sobre computación en la nube.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Educación</h2>
+            <div class="education">
+                <p class="job-title">Licenciatura en Ciencias de la Computación - [Nombre de la Universidad]</p>
+                <p class="education-details">2019 - Presente</p>
+                <ul class="education-details">
+                    <li>Cursos destacados: Computación en la Nube, Sistemas Distribuidos, Programación en Python.</li>
+                    <li>Proyecto final: Desarrollo de una plataforma de análisis de datos en AWS.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <ul>
+                    <li>AWS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Automatización CI/CD</li>
+                    <li>Administración de sistemas</li>
+                    <li>Trabajo en equipo</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Idiomas</h2>
+            <p>Español: Nativo</p>
+            <p>Inglés: Fluido</p>
+            <p>[Otro idioma]: [Nivel]</p>
+        </div>
+
+        <div class="section">
+            <h2>Referencias</h2>
+            <p>Disponibles a solicitud.</p>
+        </div>
     </div>
 </body>
 </html>
+
