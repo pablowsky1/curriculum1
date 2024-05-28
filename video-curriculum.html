@@ -41,44 +41,44 @@
             margin-left: 20%;
             padding: 20px;
         }
-        header {
-            margin-bottom: 20px;
+        .section {
+            margin: 20px 0;
         }
-        header h1 {
+        .section h2 {
             border-bottom: 2px solid #ccc;
             padding-bottom: 10px;
         }
-        section video {
+        .content video {
             width: 100%;
+            margin: 10px 0;
             border: 2px solid #ccc;
             border-radius: 10px;
         }
     </style>
 </head>
 <body>
+    <nav class="sidebar">
+        <h2>Juan Pérez</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="presentacion.html">Presentación</a></li>
+            <li><a href="cv-tradicional.html">CV Tradicional</a></li>
+            <li><a href="cv-infografico.html">CV Infográfico</a></li>
+            <li><a href="video-curriculum.html">Video Currículum</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <nav class="sidebar">
-            <h2>Juan Pérez</h2>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="presentacion.html">Presentación</a></li>
-                <li><a href="cv-tradicional.html">CV Tradicional</a></li>
-                <li><a href="cv-infografico.html">CV Infográfico</a></li>
-                <li><a href="video-curriculum.html">Video Currículum</a></li>
-                <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </nav>
-        <main class="content">
-            <header>
-                <h1>Video Currículum</h1>
-            </header>
-            <section>
+        <div class="section">
+            <h2>Video Currículum</h2>
+            <div class="content">
                 <video controls>
                     <source src="video-curriculum.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de videos.
                 </video>
-            </section>
-        </main>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
