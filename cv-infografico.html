@@ -11,18 +11,43 @@
             margin: 0;
             padding: 0;
         }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
+        .sidebar {
+            width: 20%;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            height: 100%;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
         }
-        .header, .section {
-            margin-bottom: 20px;
+        .sidebar h2 {
+            text-align: center;
+            margin: 0;
+            padding: 20px 0;
+            border-bottom: 1px solid white;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            margin-left: 20%;
+            padding: 20px;
         }
         .header {
             text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
         .header h1 {
             margin: 0;
@@ -33,11 +58,12 @@
             width: 150px;
             height: 150px;
             margin-top: 10px;
+            border: 5px solid white;
         }
         .contact-info {
             display: flex;
             justify-content: space-around;
-            background-color: #f9f9f9;
+            background-color: #e0e0e0;
             padding: 10px;
             margin-bottom: 20px;
             border-radius: 5px;
@@ -45,8 +71,16 @@
         .contact-info p {
             margin: 0;
         }
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .section h2 {
             font-size: 24px;
+            color: #4CAF50;
             border-bottom: 2px solid #ccc;
             padding-bottom: 10px;
             margin-bottom: 10px;
@@ -93,7 +127,7 @@
         }
         .languages .bar .level {
             height: 100%;
-            background-color: #4caf50;
+            background-color: #4CAF50;
             border-radius: 5px;
             text-align: right;
             padding-right: 5px;
@@ -112,6 +146,17 @@
     </style>
 </head>
 <body>
+    <nav class="sidebar">
+        <h2>Pablo Martínez</h2>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="presentacion.html">Presentación</a></li>
+            <li><a href="cv-tradicional.html">CV Tradicional</a></li>
+            <li><a href="cv-infografico.html">CV Infográfico</a></li>
+            <li><a href="video-curriculum.html">Video Currículum</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
     <div class="container">
         <div class="header">
             <h1>Pablo Martínez</h1>
@@ -167,12 +212,12 @@
             <h2>Habilidades</h2>
             <div class="skills">
                 <ul>
-                    <li>AWS</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Automatización CI/CD</li>
-                    <li>Administración de sistemas</li>
-                    <li>Trabajo en equipo</li>
+                    <li style="background-color: #0073e6;">AWS</li>
+                    <li style="background-color: #ff9900;">Python</li>
+                    <li style="background-color: #4CAF50;">Java</li>
+                    <li style="background-color: #e600e6;">Automatización CI/CD</li>
+                    <li style="background-color: #e67300;">Administración de sistemas</li>
+                    <li style="background-color: #e6e600;">Trabajo en equipo</li>
                 </ul>
             </div>
         </div>
