@@ -43,15 +43,17 @@
         }
         .header {
             text-align: center;
-            background-color: #4CAF50;
+            background-color: #a7bed3; /* Cambiar color del fondo */
             color: white;
             padding: 20px;
             border-radius: 5px;
             margin-bottom: 20px;
+            position: relative;
         }
         .header h1 {
             margin: 0;
             font-size: 36px;
+            color: #a7bed3; /* Cambiar color del título */
         }
         .header img {
             border-radius: 50%;
@@ -59,6 +61,19 @@
             height: 150px;
             margin-top: 10px;
             border: 5px solid white;
+            position: relative;
+            z-index: 1;
+        }
+        .header-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-color: #a7bed3; /* Cambiar color del fondo */
+            opacity: 0.7; /* Ajustar opacidad según preferencia */
+            border-radius: 5px;
         }
         .contact-info {
             display: flex;
@@ -80,7 +95,7 @@
         }
         .section h2 {
             font-size: 24px;
-            color: #4CAF50;
+            color: #a7bed3; /* Cambiar color del título */
             border-bottom: 2px solid #ccc;
             padding-bottom: 10px;
             margin-bottom: 10px;
@@ -168,8 +183,9 @@
     </nav>
     <div class="container">
         <div class="header">
-            <h1>Pablo Martínez</h1>
             <img src="foto-carnet.png" alt="Foto de Pablo Martínez">
+            <div class="header-background"></div>
+            <h1>Pablo Martínez</h1>
         </div>
 
         <div class="contact-info">
