@@ -90,10 +90,18 @@
         }
         .job, .education {
             margin-bottom: 20px;
+            position: relative;
         }
         .job-title, .education-title {
             font-weight: bold;
             color: #333;
+        }
+        .job-logo, .education-logo {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: 50px;
         }
         .skills ul {
             list-style-type: none;
@@ -102,11 +110,11 @@
             flex-wrap: wrap;
         }
         .skills ul li {
+            background-color: #ff9900;
+            color: white;
             padding: 10px 15px;
             margin: 5px;
             border-radius: 5px;
-            color: white;
-            background-color: #ff9900;
         }
         .languages ul {
             list-style-type: none;
@@ -178,6 +186,7 @@
             <h2>Experiencia Profesional</h2>
             <div class="job">
                 <p class="job-title">Desarrollador de Software Interno - Umlaut part of Accenture</p>
+                <img src="logo-accenture.png" alt="Accenture" class="job-logo">
                 <p>Junio 2022 - Junio 2023</p>
                 <ul>
                     <li>Desarrollé y mantuve aplicaciones internas utilizando AWS Lambda, S3 y DynamoDB.</li>
@@ -187,6 +196,7 @@
             </div>
             <div class="job">
                 <p class="job-title">Asistente de Investigación - Universidad Politécnica de Madrid</p>
+                <img src="logo-upm.png" alt="Universidad Politécnica de Madrid" class="job-logo">
                 <p>Septiembre 2021 - Mayo 2022</p>
                 <ul>
                     <li>Desarrollé scripts en Python para el análisis de grandes conjuntos de datos.</li>
@@ -200,6 +210,7 @@
             <h2>Educación</h2>
             <div class="education">
                 <p class="education-title">Licenciatura en Ciencias de la Computación - Universidad Politécnica de Madrid</p>
+                <img src="logo-upm.png" alt="Universidad Politécnica de Madrid" class="education-logo">
                 <p>2019 - Presente</p>
                 <ul>
                     <li>Cursos destacados: Computación en la Nube, Sistemas Distribuidos, Programación en Python.</li>
@@ -212,12 +223,12 @@
             <h2>Habilidades</h2>
             <div class="skills">
                 <ul>
-                    <li style="background-color: #0073e6;">AWS</li>
-                    <li style="background-color: #ff9900;">Python</li>
-                    <li style="background-color: #4CAF50;">Java</li>
-                    <li style="background-color: #e600e6;">Automatización CI/CD</li>
-                    <li style="background-color: #e67300;">Administración de sistemas</li>
-                    <li style="background-color: #e6e600;">Trabajo en equipo</li>
+                    <li>AWS</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Automatización CI/CD</li>
+                    <li>Administración de sistemas</li>
+                    <li>Trabajo en equipo</li>
                 </ul>
             </div>
         </div>
@@ -247,11 +258,7 @@
                 </ul>
             </div>
         </div>
-
-        <div class="section">
-            <h2>Referencias</h2>
-            <p>Disponibles a solicitud.</p>
-        </div>
     </div>
 </body>
 </html>
+
